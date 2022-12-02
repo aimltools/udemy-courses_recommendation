@@ -12,7 +12,7 @@ def load_data():
 
 def main():
     data = load_data()
-    st.header("**** Top Courses List Curated for you ****")
+    st.header("**** List of Top Courses Curated for you ****")
 
     category = st.sidebar.selectbox("Course Category(s)", data['category'].unique())
     if category:
