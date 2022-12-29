@@ -3,7 +3,7 @@ import pandas as pd
 from scipy import stats
 import matplotlib.pyplot as plt
 
-st.title("** Udemy Courses Recommendation Tool **")
+st.title("Udemy Courses Recommendation Tool")
 
 @st.cache
 def load_data():
