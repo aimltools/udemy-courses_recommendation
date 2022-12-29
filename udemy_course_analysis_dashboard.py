@@ -34,12 +34,6 @@ def main():
     if paid:
         data = data[data.is_paid.isin(paid)]
 
-    filter_scatter = st.sidebar.radio(
-        "Show Linear Regression",
-        ["No", "Yes"]
-    )
-    data_filter_scatter = data
-
     filter_bar_chart = st.sidebar.radio(
         "Top Courses On The Basis Of  👇",
         ["avg_rating", "num_reviews", "num_subscribers"]
@@ -61,6 +55,13 @@ def main():
         "Display Data In Table",
         ["No", "Yes"]
     )
+    
+    
+    filter_scatter = st.sidebar.radio(
+        "Show Linear Regression",
+        ["No", "Yes"]
+    )
+    data_filter_scatter = data
 
     st.header("*********************************************")
     st.subheader("** Bar Chart for Top Courses **")
